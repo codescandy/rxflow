@@ -15,19 +15,22 @@
     <meta name="msapplication-TileColor" content="#8b3dff" />
     <meta name="msapplication-config" content="./assets/images/favicon/tile.xml" />
 
-  <title>Homepage | RxFlow </title>
+  <title>Sign Up | RxFlow </title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- Register / Start Free Trial -->
-<section class="min-h-screen bg-slate-50 relative overflow-hidden">
+      <section class="min-h-screen bg-neutral-50 relative overflow-hidden">
 
-    <!-- Background Glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-blue-100/40 blur-3xl rounded-full"></div>
+<!-- Background Gradient -->
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/2 -tranneutral-x-1/2 h-[600px] w-[800px] bg-orange-100 blur-3xl opacity-60 rounded-full"></div>
+    </div>
 
-    <div class="container mx-auto px-6">
+
+    <div class="max-w-7xl mx-auto px-6 z-10 relative">
+
 
         <div class="grid lg:grid-cols-2 min-h-screen items-center gap-12 py-12">
 
@@ -38,7 +41,7 @@
                 <a href="#" class="flex items-center gap-3">
 
                     <div
-                        class="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+                        class="w-12 h-12 rounded-2xl bg-gradient-to-r from-orange-600 to-orange-700 flex items-center justify-center text-white font-bold text-xl">
                         R
                     </div>
 
@@ -74,7 +77,10 @@
 
                         <div
                             class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center">
-                            ✓
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check text-green-700">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M5 12l5 5l10 -10" />
+</svg>
                         </div>
 
                         <div>
@@ -93,7 +99,12 @@
 
                         <div
                             class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center">
-                            🔒
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-lock text-blue-700">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6" />
+	<path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+	<path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+</svg>
                         </div>
 
                         <div>
@@ -112,7 +123,10 @@
 
                         <div
                             class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center">
-                            ⚡
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bolt text-purple-700">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
                         </div>
 
                         <div>
@@ -211,7 +225,7 @@
                             <input
                                 type="text"
                                 placeholder="Dr. John Smith"
-                                class="w-full h-14 px-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full h-12 px-5 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
 
                         </div>
 
@@ -226,7 +240,7 @@
                             <input
                                 type="text"
                                 placeholder="City Medical Center"
-                                class="w-full h-14 px-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full h-12 px-5 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
 
                         </div>
 
@@ -241,7 +255,7 @@
                             <input
                                 type="email"
                                 placeholder="doctor@clinic.com"
-                                class="w-full h-14 px-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full h-12 px-5 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
 
                         </div>
 
@@ -254,7 +268,7 @@
                             </label>
 
                             <select
-                                class="w-full h-14 px-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full h-12 px-5 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
 
                                 <option>1-5 Users</option>
                                 <option>6-20 Users</option>
@@ -277,7 +291,7 @@
                             <input
                                 type="password"
                                 placeholder="Create password"
-                                class="w-full h-14 px-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full h-12 px-5 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
 
                         </div>
 
@@ -285,9 +299,8 @@
                         <label
                             class="flex items-start gap-3 text-sm text-slate-600">
 
-                            <input
-                                type="checkbox"
-                                class="mt-1">
+                           <input type="checkbox" class="w-4 h-4 text-orange-600 border-gray-300 rounded focus:ring-orange-500">
+
 
                             <span>
                                 I agree to the Terms of Service and Privacy Policy.
@@ -297,7 +310,7 @@
 
                         <!-- CTA -->
                         <button
-                            class="w-full h-14 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition">
+                            class="w-full h-14 px-5 py-2.5 rounded-xl bg-neutral-900 text-white font-semibold hover:bg-neutral-800 cursor-pointer">
 
                             Start Free Trial
 
@@ -307,7 +320,7 @@
 
                     <!-- Divider -->
                     <div
-                        class="flex items-center gap-4 my-8">
+                        class="flex items-center gap-4 my-5">
 
                         <div class="flex-1 h-px bg-slate-200"></div>
 
@@ -323,12 +336,12 @@
                     <div class="space-y-3">
 
                         <button
-                            class="w-full h-14 rounded-2xl border border-slate-200 font-medium">
+                            class="w-full h-14 rounded-2xl border border-slate-200 font-medium cursor-pointer">
                             Continue with Google
                         </button>
 
                         <button
-                            class="w-full h-14 rounded-2xl border border-slate-200 font-medium">
+                            class="w-full h-14 rounded-2xl border border-slate-200 font-medium cursor-pointer">
                             Continue with Microsoft
                         </button>
 
@@ -341,7 +354,7 @@
                         Already have an account?
 
                         <a href="#"
-                            class="font-semibold text-blue-600">
+                            class="font-semibold text-orange-700">
                             Sign In
                         </a>
 
