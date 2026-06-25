@@ -21,13 +21,12 @@
   },
   "homepage": "https://github.com/codescandy/rxflow#readme",
   "dependencies": {
-    
     "@tabler/icons-webfont": "^3.41.1",
     "@tailwindcss/vite": "^4.2.1",
-    "alpinejs": "^3.15.8"
-   
+    "alpinejs": "^3.15.12",
+    "simplebar": "^6.3.3"
   },
-   "devDependencies": {
+  "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
     "autoprefixer": "^10.4.21",
     "fast-glob": "^3.3.3",

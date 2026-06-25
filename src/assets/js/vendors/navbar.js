@@ -2,7 +2,7 @@
 
 document.querySelectorAll("aside nav a").forEach(link => {
   if (link.href === window.location.href) {
-    link.classList.add("bg-primary/10", "text-primary", "font-semibold");
+    link.classList.add("bg-orange-700/10", "text-orange-700", "font-semibold");
   }
 });
 
@@ -28,7 +28,7 @@ document.querySelectorAll("aside nav a").forEach(link => {
     var current = currentPath.replace(/\/$/, "");
 
     if (linkPath === current) {
-      link.classList.add("text-primary");
+      link.classList.add("text-orange-700");
     }
   });
 })();
