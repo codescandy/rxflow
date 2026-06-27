@@ -16,23 +16,23 @@
   --text-base: 1rem;
 
 
---color-primary-50: #fef1fb;
---color-primary-100: #fee5f9;
---color-primary-200: #ffcaf4;
---color-primary-300: #ff9fe9;
---color-primary-400: #ff63d8;
---color-primary-500: #ff44cb;
---color-primary-600: #f012a7;
---color-primary-700: #d10588;
---color-primary-800: #ad0770;
---color-primary-900: #8f0c5f;
---color-primary-950: #580037;
+--color-primary-50: #fff7ed;
+--color-primary-100: #ffedd4;
+--color-primary-200: #ffd6a8;
+--color-primary-300: #ffb86a;
+--color-primary-400: #ff8904;
+--color-primary-500: #ff6900;
+--color-primary-600: #f54900;
+--color-primary-700: #ca3500;
+--color-primary-800: #9f2d00;
+--color-primary-900: #7e2a0c;
+--color-primary-950: #441306;
 
 
-  --color-primary: #ff44cb;
-  --color-primary-strong: #ad0770;
-  --color-secondary: #1f2937;
-  --color-secondary-strong: #11181c;
+  --color-primary: #ca3500;
+  --color-primary-strong: #9f2d00;
+  --color-secondary: #262626;
+  --color-secondary-strong: #0a0a0a;
   --color-card: #fff;
 
 
@@ -46,16 +46,16 @@
   
   /* Buttons */
   .btn {
-    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full font-semibold transition duration-200 cursor-pointer;
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold transition duration-200 cursor-pointer;
   }
   .btn-lg{
     @apply  px-6 py-2.5 text-lg;
   }
   .btn-sm{
-    @apply  px-4  py-1.5 text-sm;
+    @apply  px-3  py-1 text-sm;
   }
   .btn-xs{
-    @apply  px-3 py-1 text-xs;
+    @apply  px-3 py-2 text-xs leading-none;
   }
 
   .btn-primary {

@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#8b3dff" />
     <meta name="msapplication-config" content="../assets/images/favicon/tile.xml" />
-  <title>Dashboard </title>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Add Patient </title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body x-data="{ modal: null }" class="bg-neutral-50">
@@ -23,7 +23,7 @@
   <div class="flex h-screen overflow-hidden">
  
   <!-- Sidebar -->
-   <aside  :class="sidebarOpen ? 'translate-x-0 ' : '-translate-x-full lg:translate-x-0'"
+   <aside  :class="sidebarOpen ? 'tranneutral-x-0 ' : '-tranneutral-x-full lg:tranneutral-x-0'"
       :style="collapsed ? 'width: 4.8rem' : 'width: 16rem'"
       class="h-screen flex flex-col fixed lg:relative z-30 inset-y-0 left-0 bg-white border-r border-neutral-200 transform transition-all duration-300">
       <div class="flex items-center justify-between h-16 ps-4  border-b border-neutral-200">
@@ -321,7 +321,7 @@
           <div x-data="{ open: false }" class="relative">
 
             <button @click="open = !open" class="cursor-pointer">
-              <img src="../assets/images/avatar/avatar-1.jpg" alt="" class="w-8 h-8 rounded-full">
+              <img src="../../assets/images/avatar/avatar-1.jpg" alt="" class="w-8 h-8 rounded-full">
             </button>
 
             <!-- Dropdown -->
@@ -369,18 +369,286 @@
       </header>
        <!-- Page Content -->
       <main class="flex-1  overflow-auto">
-        <div class="max-w-7xl mx-auto p-6" style="background: url(../assets/images/svg/glow.svg)no-repeat;">
-          <div class="flex justify-between items-center mb-6">
-            <div>
-              <h1 class="text-3xl sm:text-4xl font-bold text-zinc-800">Admin Dashboard</h1>
+        <div class="max-w-7xl mx-auto p-8" style="background: url(../../assets/images/svg/glow.svg)no-repeat;">
+       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
 
+    <div>
+        <h1 class="text-3xl font-bold text-neutral-900">
+            Add Patient
+        </h1>
+
+        <p class="mt-2 text-neutral-500">
+            Create a new patient record and medical profile.
+        </p>
+    </div>
+
+    <div class="flex gap-3">
+
+        <button class="px-5 py-3 rounded-2xl border border-neutral-200 bg-white hover:bg-neutral-50">
+
+            Cancel
+
+        </button>
+
+        <button class="px-5 py-3 rounded-2xl bg-neutral-900 text-white hover:bg-neutral-800">
+
+            Save Patient
+
+        </button>
+
+    </div>
+
+</div>
+          <div class="grid xl:grid-cols-3 gap-8">
+
+    <!-- LEFT COLUMN -->
+    <div class="xl:col-span-2 space-y-8">
+
+        <!-- Patient Information -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Patient Information
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">
+                        First Name
+                    </label>
+
+                    <input type="text"
+                        placeholder="John"
+                        class="w-full h-14 px-4 rounded-2xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">
+                        Last Name
+                    </label>
+
+                    <input type="text"
+                        placeholder="Smith"
+                        class="w-full h-14 px-4 rounded-2xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">
+                        Date of Birth
+                    </label>
+
+                    <input type="date"
+                        class="w-full h-14 px-4 rounded-2xl border border-neutral-200">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">
+                        Gender
+                    </label>
+
+                    <select
+                        class="w-full h-14 px-4 rounded-2xl border border-neutral-200">
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
 
             </div>
-            <button class="btn btn-primary">
-              + Add Button
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Contact Information
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <input type="email"
+                    placeholder="Email Address"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input type="tel"
+                    placeholder="Phone Number"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+            </div>
+
+            <textarea
+                rows="4"
+                placeholder="Address"
+                class="mt-5 w-full p-4 rounded-2xl border border-neutral-200"></textarea>
+
+        </div>
+
+        <!-- Medical Information -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Medical Information
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-5">
+
+                <input
+                    type="text"
+                    placeholder="Blood Group"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input
+                    type="text"
+                    placeholder="Height (cm)"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input
+                    type="text"
+                    placeholder="Weight (kg)"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+            </div>
+
+        </div>
+
+        <!-- Allergies & Conditions -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Allergies & Medical Conditions
+            </h3>
+
+            <textarea
+                rows="3"
+                placeholder="Known Allergies"
+                class="w-full p-4 rounded-2xl border border-neutral-200 mb-4"></textarea>
+
+            <textarea
+                rows="4"
+                placeholder="Medical Conditions / Chronic Diseases"
+                class="w-full p-4 rounded-2xl border border-neutral-200"></textarea>
+
+        </div>
+
+        <!-- Insurance -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Insurance Information
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <input
+                    type="text"
+                    placeholder="Insurance Provider"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input
+                    type="text"
+                    placeholder="Policy Number"
+                    class="h-14 px-4 rounded-2xl border border-neutral-200">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="space-y-8">
+
+        <!-- Photo Upload -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-5">
+                Patient Photo
+            </h3>
+
+            <div
+                class="h-56 rounded-3xl border-2 border-dashed border-neutral-300 flex items-center justify-center text-neutral-500">
+
+                Upload Photo
+
+            </div>
+
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+
+            <h3 class="text-xl font-semibold mb-6">
+                Emergency Contact
+            </h3>
+
+            <div class="space-y-4">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="w-full h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input
+                    type="text"
+                    placeholder="Relationship"
+                    class="w-full h-14 px-4 rounded-2xl border border-neutral-200">
+
+                <input
+                    type="text"
+                    placeholder="Phone Number"
+                    class="w-full h-14 px-4 rounded-2xl border border-neutral-200">
+
+            </div>
+
+        </div>
+
+        <!-- AI Assistant -->
+        <div
+            class="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white rounded-3xl p-8">
+
+            <div class="flex items-center gap-3 mb-5">
+
+                <div
+                    class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center">
+                    🤖
+                </div>
+
+                <h3 class="font-semibold">
+                    AI Intake Assistant
+                </h3>
+
+            </div>
+
+            <p class="text-sm text-neutral-300 leading-relaxed">
+
+                AI will automatically analyze patient information,
+                allergies, chronic conditions and medication risks
+                after the patient record is created.
+
+            </p>
+
+        </div>
+
+        <!-- Save Card -->
+        <div class="bg-white border border-neutral-200 rounded-3xl p-6">
+
+            <button
+                class="w-full h-14 rounded-2xl bg-neutral-900 text-white font-medium hover:bg-neutral-800">
+
+                Save Patient Record
+
             </button>
-          </div>
-        
+
+        </div>
+
+    </div>
+
+</div>
+
+  
 
         </div>
 
@@ -392,7 +660,7 @@
 
 
 
-    <script type="module" src="../assets/js/main.js"></script>
+    <script type="module" src="../../assets/js/main.js"></script>
 </body>
 
 </html>
